@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name Ventilator_Interface_Board-rescue)(type Legacy)(uri ${KIPRJMOD}/Ventilator_Interface_Board-rescue.lib)(options "")(descr ""))
+  (lib (name power1)(type Legacy)(uri /usr/share/kicad/library/power.lib)(options "")(descr ""))
+  (lib (name 74xx1)(type Legacy)(uri /usr/share/kicad/library/74xx.lib)(options "")(descr ""))
+  (lib (name Ventilator)(type Legacy)(uri ${KIPRJMOD}/Ventilator.lib)(options "")(descr ""))
+)

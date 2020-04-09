@@ -1,0 +1,1277 @@
+EESchema Schematic File Version 4
+LIBS:Ventilator_Interface_Board-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "PREVAIL-NY Emergency Ventilator Interface Board"
+Date "2020-04-08"
+Rev "A"
+Comp "Devtank Ltd"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 7075 3050 0    60   ~ 0
+TIDAL_VOLUME
+Text Label 7075 3150 0    60   ~ 0
+BPM
+Text Label 7075 3250 0    60   ~ 0
+IF_RATE
+Text Label 7075 3350 0    60   ~ 0
+MAX_PRESSURE
+Text Label 7075 3450 0    60   ~ 0
+PRESSURE_SENSOR
+Text Label 7075 3550 0    60   ~ 0
+HOME_LIMIT_SW
+Text Label 10575 3500 2    60   ~ 0
+OPTICAL_SW
+Text Label 10575 3400 2    60   ~ 0
+MOTOR_PWM_1
+Text Label 10575 3300 2    60   ~ 0
+LCD_D4
+Text Label 10575 3200 2    60   ~ 0
+MOTOR_ENCODER
+Text Label 10575 3100 2    60   ~ 0
+LCD_D6
+Text Label 10575 3000 2    60   ~ 0
+LCD_D7
+Text Label 10575 2800 2    60   ~ 0
+BUZZER_LED
+Text Label 10575 2700 2    60   ~ 0
+LCD_D5
+Text Label 10575 2600 2    60   ~ 0
+LCD_EN
+Text Label 10575 2500 2    60   ~ 0
+MOTOR_PWM_2
+Text Label 10575 2400 2    60   ~ 0
+LCD_RS
+Text Label 10575 2300 2    60   ~ 0
+MOTOR_DRIVER_EN
+NoConn ~ 7975 2150
+Text Notes 10850 1000 0    60   ~ 0
+Holes
+$Comp
+L Ventilator_Interface_Board-rescue:CONN_01X08 P1
+U 1 1 56D70129
+P 8175 2500
+F 0 "P1" H 8175 2950 50  0000 C CNN
+F 1 "Power" V 8275 2500 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x08" V 8325 2500 20  0000 C CNN
+F 3 "" H 8175 2500 50  0000 C CNN
+	1    8175 2500
+	1    0    0    -1  
+$EndComp
+Text Label 7225 2350 0    60   ~ 0
+RESET
+$Comp
+L power1:+3.3V #PWR01
+U 1 1 56D70538
+P 7725 1825
+F 0 "#PWR01" H 7725 1675 50  0001 C CNN
+F 1 "+3.3V" H 7775 1975 50  0000 C CNN
+F 2 "" H 7725 1825 50  0000 C CNN
+F 3 "" H 7725 1825 50  0000 C CNN
+	1    7725 1825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power1:+5V #PWR02
+U 1 1 56D707BB
+P 7625 1575
+F 0 "#PWR02" H 7625 1425 50  0001 C CNN
+F 1 "+5V" H 7625 1715 50  0000 C CNN
+F 2 "" H 7625 1575 50  0000 C CNN
+F 3 "" H 7625 1575 50  0000 C CNN
+	1    7625 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power1:GND #PWR03
+U 1 1 56D70CC2
+P 7875 3700
+F 0 "#PWR03" H 7875 3450 50  0001 C CNN
+F 1 "GND" H 7875 3550 50  0000 C CNN
+F 2 "" H 7875 3700 50  0000 C CNN
+F 3 "" H 7875 3700 50  0000 C CNN
+	1    7875 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power1:GND #PWR04
+U 1 1 56D70CFF
+P 9625 3850
+F 0 "#PWR04" H 9625 3600 50  0001 C CNN
+F 1 "GND" H 9625 3700 50  0000 C CNN
+F 2 "" H 9625 3850 50  0000 C CNN
+F 3 "" H 9625 3850 50  0000 C CNN
+	1    9625 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ventilator_Interface_Board-rescue:CONN_01X06 P2
+U 1 1 56D70DD8
+P 8175 3300
+F 0 "P2" H 8175 3650 50  0000 C CNN
+F 1 "Analog" V 8275 3300 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x06" V 8325 3350 20  0000 C CNN
+F 3 "" H 8175 3300 50  0000 C CNN
+	1    8175 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ventilator_Interface_Board-rescue:CONN_01X01 P5
+U 1 1 56D71177
+P 10800 650
+F 0 "P5" V 10900 650 50  0000 C CNN
+F 1 "CONN_01X01" V 10900 650 50  0001 C CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 10721 724 20  0000 C CNN
+F 3 "" H 10800 650 50  0000 C CNN
+	1    10800 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Ventilator_Interface_Board-rescue:CONN_01X01 P6
+U 1 1 56D71274
+P 10900 650
+F 0 "P6" V 11000 650 50  0000 C CNN
+F 1 "CONN_01X01" V 11000 650 50  0001 C CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 10900 650 20  0001 C CNN
+F 3 "" H 10900 650 50  0000 C CNN
+	1    10900 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Ventilator_Interface_Board-rescue:CONN_01X01 P7
+U 1 1 56D712A8
+P 11000 650
+F 0 "P7" V 11100 650 50  0000 C CNN
+F 1 "CONN_01X01" V 11100 650 50  0001 C CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" V 11000 650 20  0001 C CNN
+F 3 "" H 11000 650 50  0000 C CNN
+	1    11000 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Ventilator_Interface_Board-rescue:CONN_01X01 P8
+U 1 1 56D712DB
+P 11100 650
+F 0 "P8" V 11200 650 50  0000 C CNN
+F 1 "CONN_01X01" V 11200 650 50  0001 C CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 11024 572 20  0000 C CNN
+F 3 "" H 11100 650 50  0000 C CNN
+	1    11100 650 
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 10800 850 
+NoConn ~ 10900 850 
+NoConn ~ 11000 850 
+NoConn ~ 11100 850 
+$Comp
+L Ventilator_Interface_Board-rescue:CONN_01X08 P4
+U 1 1 56D7164F
+P 9325 3350
+F 0 "P4" H 9325 3800 50  0000 C CNN
+F 1 "Digital" V 9425 3350 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x08" V 9475 3300 20  0000 C CNN
+F 3 "" H 9325 3350 50  0000 C CNN
+	1    9325 3350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7975 2450 7725 2450
+Wire Wire Line
+	7975 2550 7625 2550
+Wire Wire Line
+	7975 2650 7875 2650
+Wire Wire Line
+	7975 2750 7875 2750
+Connection ~ 7875 2750
+Wire Wire Line
+	7625 2550 7625 1675
+Wire Wire Line
+	7725 2450 7725 1900
+Wire Wire Line
+	7975 3050 7075 3050
+Wire Wire Line
+	7975 3150 7075 3150
+Wire Wire Line
+	7975 3250 7075 3250
+Wire Wire Line
+	7975 3350 7075 3350
+Wire Wire Line
+	7975 3450 7075 3450
+Wire Wire Line
+	7975 3550 7075 3550
+$Comp
+L Ventilator_Interface_Board-rescue:CONN_01X10 P3
+U 1 1 56D721E0
+P 9325 2350
+F 0 "P3" H 9325 2900 50  0000 C CNN
+F 1 "Digital" V 9425 2350 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x10" V 9475 2350 20  0000 C CNN
+F 3 "" H 9325 2350 50  0000 C CNN
+	1    9325 2350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9525 2500 10575 2500
+Wire Wire Line
+	9525 2400 10575 2400
+Wire Wire Line
+	9525 2300 10575 2300
+Wire Wire Line
+	9525 2100 9875 2100
+Wire Wire Line
+	9525 2000 9875 2000
+Wire Wire Line
+	9525 1900 9875 1900
+Wire Wire Line
+	9525 3700 9875 3700
+Wire Wire Line
+	9525 3600 9875 3600
+Wire Wire Line
+	9525 3200 10575 3200
+Wire Wire Line
+	9525 2200 9625 2200
+Wire Wire Line
+	9625 2200 9625 3850
+Wire Wire Line
+	7875 2650 7875 2750
+Wire Wire Line
+	7875 2750 7875 3700
+Text Notes 8275 2150 0    60   ~ 0
+1
+Wire Notes Line
+	11200 1000 10700 1000
+Wire Notes Line
+	10700 1000 10700 500 
+NoConn ~ 9875 3600
+NoConn ~ 9875 3700
+NoConn ~ 7975 2250
+NoConn ~ 9875 1900
+NoConn ~ 9875 2000
+NoConn ~ 9875 2100
+NoConn ~ 7975 2850
+$Comp
+L Connector_Generic:Conn_01x12 J4
+U 1 1 5E9858CA
+P 5225 1725
+F 0 "J4" H 5305 1717 50  0000 L CNN
+F 1 "LCD DISPLAY" H 5305 1626 50  0000 L CNN
+F 2 "Ventilator:Molex_KK-254_1x12_P2.54mm_Horizontal" H 5225 1725 50  0001 C CNN
+F 3 "~" H 5225 1725 50  0001 C CNN
+	1    5225 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J5
+U 1 1 5E988889
+P 5500 4325
+F 0 "J5" H 5580 4367 50  0000 L CNN
+F 1 "OPTICAL SWITCH" H 5580 4276 50  0000 L CNN
+F 2 "Ventilator:Molex_KK-254_1x05_P2.54mm_Horizontal" H 5500 4325 50  0001 C CNN
+F 3 "~" H 5500 4325 50  0001 C CNN
+	1    5500 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J6
+U 1 1 5E98B018
+P 5500 6375
+F 0 "J6" H 5580 6367 50  0000 L CNN
+F 1 "HOME LIMIT SWITCH" H 5580 6276 50  0000 L CNN
+F 2 "Ventilator:Molex_KK-254_1x06_P2.54mm_Horizontal" H 5500 6375 50  0001 C CNN
+F 3 "~" H 5500 6375 50  0001 C CNN
+	1    5500 6375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 5E98ED86
+P 2650 1975
+F 0 "J1" H 2730 1967 50  0000 L CNN
+F 1 "ROTARY CONTROLS" H 2730 1876 50  0000 L CNN
+F 2 "Ventilator:Molex_KK-254_1x08_P2.54mm_Horizontal" H 2650 1975 50  0001 C CNN
+F 3 "~" H 2650 1975 50  0001 C CNN
+	1    2650 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5E9980B7
+P 4600 5950
+F 0 "R5" H 4670 5996 50  0000 L CNN
+F 1 "470R" H 4670 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4530 5950 50  0001 C CNN
+F 3 "~" H 4600 5950 50  0001 C CNN
+	1    4600 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E99BB2B
+P 4825 6825
+F 0 "R8" H 4895 6871 50  0000 L CNN
+F 1 "330R" H 4895 6780 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4755 6825 50  0001 C CNN
+F 3 "~" H 4825 6825 50  0001 C CNN
+	1    4825 6825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E99E8D4
+P 4275 5950
+F 0 "R3" H 4345 5996 50  0000 L CNN
+F 1 "10K" H 4345 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4205 5950 50  0001 C CNN
+F 3 "~" H 4275 5950 50  0001 C CNN
+	1    4275 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4825 6675 4825 6275
+Wire Wire Line
+	4825 6275 5300 6275
+Wire Wire Line
+	4600 6100 4600 6475
+Wire Wire Line
+	4600 6475 5300 6475
+Wire Wire Line
+	4275 6100 4275 6575
+Wire Wire Line
+	4275 6575 5300 6575
+$Comp
+L power1:GND #PWR021
+U 1 1 5E9A3D08
+P 5175 7075
+F 0 "#PWR021" H 5175 6825 50  0001 C CNN
+F 1 "GND" H 5175 6925 50  0000 C CNN
+F 2 "" H 5175 7075 50  0000 C CNN
+F 3 "" H 5175 7075 50  0000 C CNN
+	1    5175 7075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5175 6375 5300 6375
+Wire Wire Line
+	5175 6175 5300 6175
+$Comp
+L power1:+5V #PWR015
+U 1 1 5E9AB909
+P 4275 5550
+F 0 "#PWR015" H 4275 5400 50  0001 C CNN
+F 1 "+5V" H 4275 5690 50  0000 C CNN
+F 2 "" H 4275 5550 50  0000 C CNN
+F 3 "" H 4275 5550 50  0000 C CNN
+	1    4275 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4275 5550 4275 5650
+Wire Wire Line
+	4600 5800 4600 5650
+Wire Wire Line
+	4600 5650 4275 5650
+Connection ~ 4275 5650
+Wire Wire Line
+	4275 5650 4275 5800
+Connection ~ 4600 5650
+Wire Wire Line
+	5175 5650 5175 6175
+Wire Wire Line
+	4600 5650 5175 5650
+$Comp
+L power1:GND #PWR018
+U 1 1 5E9B79F4
+P 4825 7075
+F 0 "#PWR018" H 4825 6825 50  0001 C CNN
+F 1 "GND" H 4825 6925 50  0000 C CNN
+F 2 "" H 4825 7075 50  0000 C CNN
+F 3 "" H 4825 7075 50  0000 C CNN
+	1    4825 7075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4825 6975 4825 7075
+$Comp
+L Device:R R4
+U 1 1 5E9D5C8A
+P 4600 3900
+F 0 "R4" H 4670 3946 50  0000 L CNN
+F 1 "470R" H 4670 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4530 3900 50  0001 C CNN
+F 3 "~" H 4600 3900 50  0001 C CNN
+	1    4600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E9D5C94
+P 4825 4775
+F 0 "R7" H 4895 4821 50  0000 L CNN
+F 1 "330R" H 4895 4730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4755 4775 50  0001 C CNN
+F 3 "~" H 4825 4775 50  0001 C CNN
+	1    4825 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E9D5C9E
+P 4275 3900
+F 0 "R2" H 4345 3946 50  0000 L CNN
+F 1 "10K" H 4345 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4205 3900 50  0001 C CNN
+F 3 "~" H 4275 3900 50  0001 C CNN
+	1    4275 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4825 4625 4825 4225
+Wire Wire Line
+	4825 4225 5300 4225
+Wire Wire Line
+	4600 4050 4600 4425
+Wire Wire Line
+	4600 4425 5300 4425
+Wire Wire Line
+	4275 4050 4275 4525
+$Comp
+L power1:GND #PWR020
+U 1 1 5E9D5CAE
+P 5175 5025
+F 0 "#PWR020" H 5175 4775 50  0001 C CNN
+F 1 "GND" H 5175 4875 50  0000 C CNN
+F 2 "" H 5175 5025 50  0000 C CNN
+F 3 "" H 5175 5025 50  0000 C CNN
+	1    5175 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5175 4325 5300 4325
+Wire Wire Line
+	5175 4125 5300 4125
+$Comp
+L power1:+5V #PWR014
+U 1 1 5E9D5CBE
+P 4275 3500
+F 0 "#PWR014" H 4275 3350 50  0001 C CNN
+F 1 "+5V" H 4275 3640 50  0000 C CNN
+F 2 "" H 4275 3500 50  0000 C CNN
+F 3 "" H 4275 3500 50  0000 C CNN
+	1    4275 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4275 3500 4275 3600
+Wire Wire Line
+	4600 3750 4600 3600
+Wire Wire Line
+	4600 3600 4275 3600
+Connection ~ 4275 3600
+Wire Wire Line
+	4275 3600 4275 3750
+Connection ~ 4600 3600
+Wire Wire Line
+	5175 3600 5175 4125
+Wire Wire Line
+	4600 3600 5175 3600
+$Comp
+L power1:GND #PWR017
+U 1 1 5E9D5CD0
+P 4825 5025
+F 0 "#PWR017" H 4825 4775 50  0001 C CNN
+F 1 "GND" H 4825 4875 50  0000 C CNN
+F 2 "" H 4825 5025 50  0000 C CNN
+F 3 "" H 4825 5025 50  0000 C CNN
+	1    4825 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4825 4925 4825 5025
+Wire Wire Line
+	5175 4325 5175 5025
+$Comp
+L power1:+5V #PWR08
+U 1 1 5E9ED3FD
+P 2100 1500
+F 0 "#PWR08" H 2100 1350 50  0001 C CNN
+F 1 "+5V" H 2100 1640 50  0000 C CNN
+F 2 "" H 2100 1500 50  0000 C CNN
+F 3 "" H 2100 1500 50  0000 C CNN
+	1    2100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power1:GND #PWR09
+U 1 1 5E9EEF59
+P 2100 2300
+F 0 "#PWR09" H 2100 2050 50  0001 C CNN
+F 1 "GND" H 2100 2150 50  0000 C CNN
+F 2 "" H 2100 2300 50  0000 C CNN
+F 3 "" H 2100 2300 50  0000 C CNN
+	1    2100 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1675 2450 1675
+Wire Wire Line
+	2450 1775 1450 1775
+Wire Wire Line
+	2450 1875 1450 1875
+Wire Wire Line
+	2450 1975 1450 1975
+Text Label 1450 1775 0    50   ~ 0
+TIDAL_VOLUME
+Text Label 1450 1875 0    50   ~ 0
+BPM
+Text Label 1450 1975 0    50   ~ 0
+IF_RATE
+Wire Wire Line
+	2450 2075 1450 2075
+Text Label 1450 2075 0    50   ~ 0
+MAX_PRESSURE
+$Comp
+L power1:+5V #PWR010
+U 1 1 5EA2B95C
+P 1425 3050
+F 0 "#PWR010" H 1425 2900 50  0001 C CNN
+F 1 "+5V" H 1425 3190 50  0000 C CNN
+F 2 "" H 1425 3050 50  0000 C CNN
+F 3 "" H 1425 3050 50  0000 C CNN
+	1    1425 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power1:GND #PWR011
+U 1 1 5EA2BE29
+P 1425 3500
+F 0 "#PWR011" H 1425 3250 50  0001 C CNN
+F 1 "GND" H 1425 3350 50  0000 C CNN
+F 2 "" H 1425 3500 50  0000 C CNN
+F 3 "" H 1425 3500 50  0000 C CNN
+	1    1425 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1425 3500 1425 3375
+Wire Wire Line
+	1825 3175 1425 3175
+Wire Wire Line
+	1425 3175 1425 3050
+Wire Wire Line
+	1825 3275 750  3275
+Text Label 750  3275 0    50   ~ 0
+PRESSURE_SENSOR
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5EA3D754
+P 2650 5275
+F 0 "J3" H 2730 5267 50  0000 L CNN
+F 1 "ALARM" H 2730 5176 50  0000 L CNN
+F 2 "Ventilator:Molex_KK-254_1x04_P2.54mm_Horizontal" H 2650 5275 50  0001 C CNN
+F 3 "~" H 2650 5275 50  0001 C CNN
+	1    2650 5275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5175 2225 5175
+Text Label 1750 5175 0    50   ~ 0
+BUZZER_LED
+$Comp
+L power1:GND #PWR012
+U 1 1 5EA46289
+P 2350 5925
+F 0 "#PWR012" H 2350 5675 50  0001 C CNN
+F 1 "GND" H 2350 5775 50  0000 C CNN
+F 2 "" H 2350 5925 50  0000 C CNN
+F 3 "" H 2350 5925 50  0000 C CNN
+	1    2350 5925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5275 2350 5275
+Wire Wire Line
+	2450 5375 2225 5375
+Wire Wire Line
+	2225 5375 2225 5175
+Connection ~ 2225 5175
+Wire Wire Line
+	2225 5175 1750 5175
+Wire Wire Line
+	2350 5275 2350 5925
+$Comp
+L Device:R R1
+U 1 1 5EA51CC5
+P 2000 5725
+F 0 "R1" H 2070 5771 50  0000 L CNN
+F 1 "330R" H 2070 5680 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1930 5725 50  0001 C CNN
+F 3 "~" H 2000 5725 50  0001 C CNN
+	1    2000 5725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5575 2000 5475
+Wire Wire Line
+	2000 5475 2450 5475
+$Comp
+L power1:GND #PWR05
+U 1 1 5EA5B67C
+P 2000 5925
+F 0 "#PWR05" H 2000 5675 50  0001 C CNN
+F 1 "GND" H 2000 5775 50  0000 C CNN
+F 2 "" H 2000 5925 50  0000 C CNN
+F 3 "" H 2000 5925 50  0000 C CNN
+	1    2000 5925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5925 2000 5875
+Text Notes 2725 5975 0    50   ~ 0
+PIN 1: BUZZER+\nPIN 2: BUZZER-\nPIN 3: LED_A\nPIN 4: LED_K
+$Comp
+L power1:GND #PWR019
+U 1 1 5EA66073
+P 4875 2425
+F 0 "#PWR019" H 4875 2175 50  0001 C CNN
+F 1 "GND" H 4875 2275 50  0000 C CNN
+F 2 "" H 4875 2425 50  0000 C CNN
+F 3 "" H 4875 2425 50  0000 C CNN
+	1    4875 2425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 1225 4875 1225
+Wire Wire Line
+	4875 1225 4875 1625
+Wire Wire Line
+	5025 1625 4875 1625
+Connection ~ 4875 1625
+$Comp
+L Device:R R6
+U 1 1 5EA74DED
+P 4675 2225
+F 0 "R6" V 4775 2225 50  0000 C CNN
+F 1 "470R" V 4675 2225 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4605 2225 50  0001 C CNN
+F 3 "~" H 4675 2225 50  0001 C CNN
+	1    4675 2225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4825 2225 5025 2225
+Wire Wire Line
+	5025 2125 4175 2125
+Wire Wire Line
+	5025 2025 4175 2025
+Wire Wire Line
+	5025 1925 4175 1925
+Wire Wire Line
+	5025 1825 4175 1825
+Wire Wire Line
+	5025 1725 4175 1725
+Wire Wire Line
+	5025 1525 4175 1525
+Wire Wire Line
+	5025 1425 4700 1425
+$Comp
+L power1:+5V #PWR013
+U 1 1 5EAD7029
+P 3925 2150
+F 0 "#PWR013" H 3925 2000 50  0001 C CNN
+F 1 "+5V" H 3925 2290 50  0000 C CNN
+F 2 "" H 3925 2150 50  0000 C CNN
+F 3 "" H 3925 2150 50  0000 C CNN
+	1    3925 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3925 2150 3925 2225
+Wire Wire Line
+	3925 2225 4525 2225
+Text Label 4175 1525 0    50   ~ 0
+LCD_RS
+Text Label 4175 1725 0    50   ~ 0
+LCD_EN
+Text Label 4175 1825 0    50   ~ 0
+LCD_D4
+Text Label 4175 1925 0    50   ~ 0
+LCD_D5
+Text Label 4175 2025 0    50   ~ 0
+LCD_D6
+Text Label 4175 2125 0    50   ~ 0
+LCD_D7
+Wire Wire Line
+	4700 1425 4700 1325
+$Comp
+L power1:+5V #PWR016
+U 1 1 5EAD5FC5
+P 4700 1150
+F 0 "#PWR016" H 4700 1000 50  0001 C CNN
+F 1 "+5V" H 4700 1290 50  0000 C CNN
+F 2 "" H 4700 1150 50  0000 C CNN
+F 3 "" H 4700 1150 50  0000 C CNN
+	1    4700 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1500 2100 1675
+$Comp
+L Device:C C2
+U 1 1 5EB473CD
+P 2325 7075
+F 0 "C2" V 2400 6975 50  0000 R CNN
+F 1 "100nF" V 2400 7375 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2363 6925 50  0001 C CNN
+F 3 "~" H 2325 7075 50  0001 C CNN
+	1    2325 7075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5EB48445
+P 2575 7075
+F 0 "C3" V 2650 6975 50  0000 R CNN
+F 1 "100nF" V 2650 7375 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2613 6925 50  0001 C CNN
+F 3 "~" H 2575 7075 50  0001 C CNN
+	1    2575 7075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5EB48982
+P 2825 7075
+F 0 "C4" V 2900 6975 50  0000 R CNN
+F 1 "100nF" V 2900 7375 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2863 6925 50  0001 C CNN
+F 3 "~" H 2825 7075 50  0001 C CNN
+	1    2825 7075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5EB48C3B
+P 3075 7075
+F 0 "C5" V 3150 6975 50  0000 R CNN
+F 1 "100nF" V 3150 7375 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3113 6925 50  0001 C CNN
+F 3 "~" H 3075 7075 50  0001 C CNN
+	1    3075 7075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5EB48FF1
+P 3325 7075
+F 0 "C6" V 3400 6975 50  0000 R CNN
+F 1 "100nF" V 3400 7375 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3363 6925 50  0001 C CNN
+F 3 "~" H 3325 7075 50  0001 C CNN
+	1    3325 7075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EB4D0C4
+P 2025 7075
+F 0 "C1" V 2100 6975 50  0000 R CNN
+F 1 "1uF" V 2100 7375 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2063 6925 50  0001 C CNN
+F 3 "~" H 2025 7075 50  0001 C CNN
+	1    2025 7075
+	-1   0    0    1   
+$EndComp
+$Comp
+L power1:GND #PWR07
+U 1 1 5EB4F1EB
+P 2025 7475
+F 0 "#PWR07" H 2025 7225 50  0001 C CNN
+F 1 "GND" H 2025 7325 50  0000 C CNN
+F 2 "" H 2025 7475 50  0000 C CNN
+F 3 "" H 2025 7475 50  0000 C CNN
+	1    2025 7475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 7475 2025 7400
+Wire Wire Line
+	2325 7225 2325 7400
+Wire Wire Line
+	2325 7400 2025 7400
+Connection ~ 2025 7400
+Wire Wire Line
+	2025 7400 2025 7225
+Wire Wire Line
+	2575 7225 2575 7400
+Wire Wire Line
+	2575 7400 2325 7400
+Connection ~ 2325 7400
+Wire Wire Line
+	2825 7225 2825 7400
+Wire Wire Line
+	2825 7400 2575 7400
+Connection ~ 2575 7400
+Wire Wire Line
+	3075 7225 3075 7400
+Wire Wire Line
+	3075 7400 2825 7400
+Connection ~ 2825 7400
+Wire Wire Line
+	3325 7225 3325 7400
+Wire Wire Line
+	3325 7400 3075 7400
+Connection ~ 3075 7400
+Wire Wire Line
+	2025 6700 2025 6750
+$Comp
+L power1:+5V #PWR06
+U 1 1 5EB4E157
+P 2025 6700
+F 0 "#PWR06" H 2025 6550 50  0001 C CNN
+F 1 "+5V" H 2025 6840 50  0000 C CNN
+F 2 "" H 2025 6700 50  0000 C CNN
+F 3 "" H 2025 6700 50  0000 C CNN
+	1    2025 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 6750 2325 6750
+Wire Wire Line
+	2325 6750 2325 6925
+Connection ~ 2025 6750
+Wire Wire Line
+	2025 6750 2025 6925
+Wire Wire Line
+	2575 6750 2325 6750
+Connection ~ 2325 6750
+Wire Wire Line
+	2825 6925 2825 6750
+Wire Wire Line
+	2825 6750 2575 6750
+Connection ~ 2575 6750
+Wire Wire Line
+	3075 6925 3075 6750
+Wire Wire Line
+	3075 6750 2825 6750
+Connection ~ 2825 6750
+Wire Wire Line
+	3075 6750 3325 6750
+Wire Wire Line
+	3325 6750 3325 6925
+Connection ~ 3075 6750
+Text Notes 8075 1350 0    50   ~ 10
+ARDUINO UNO R3 - INTERFACES
+Wire Notes Line
+	6400 925  6400 4525
+Wire Notes Line
+	6450 4525 10750 4525
+Text Notes 2750 775  0    50   ~ 10
+VENTILATOR SYSTEM INTERFACES
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5EBFA086
+P 7175 2175
+F 0 "TP7" V 7175 2450 50  0000 C CNN
+F 1 "TestPoint" V 7279 2247 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7375 2175 50  0001 C CNN
+F 3 "~" H 7375 2175 50  0001 C CNN
+	1    7175 2175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5EBFB012
+P 7075 3050
+F 0 "TP1" V 7075 3325 50  0000 C CNN
+F 1 "TestPoint" V 7179 3122 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7275 3050 50  0001 C CNN
+F 3 "~" H 7275 3050 50  0001 C CNN
+	1    7075 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5EBFBDA2
+P 7075 3150
+F 0 "TP2" V 7075 3425 50  0000 C CNN
+F 1 "TestPoint" V 7179 3222 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7275 3150 50  0001 C CNN
+F 3 "~" H 7275 3150 50  0001 C CNN
+	1    7075 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5EBFC021
+P 7075 3250
+F 0 "TP3" V 7075 3525 50  0000 C CNN
+F 1 "TestPoint" V 7179 3322 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7275 3250 50  0001 C CNN
+F 3 "~" H 7275 3250 50  0001 C CNN
+	1    7075 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5EBFC28E
+P 7075 3350
+F 0 "TP4" V 7075 3625 50  0000 C CNN
+F 1 "TestPoint" V 7179 3422 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7275 3350 50  0001 C CNN
+F 3 "~" H 7275 3350 50  0001 C CNN
+	1    7075 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5EBFC5DF
+P 7075 3450
+F 0 "TP5" V 7075 3725 50  0000 C CNN
+F 1 "TestPoint" V 7179 3522 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7275 3450 50  0001 C CNN
+F 3 "~" H 7275 3450 50  0001 C CNN
+	1    7075 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5EBFC82B
+P 7075 3550
+F 0 "TP6" V 7075 3825 50  0000 C CNN
+F 1 "TestPoint" V 7179 3622 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7275 3550 50  0001 C CNN
+F 3 "~" H 7275 3550 50  0001 C CNN
+	1    7075 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5EBFDBDC
+P 6875 2350
+F 0 "SW1" H 6875 2635 50  0000 C CNN
+F 1 "SW_Push" H 6875 2544 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 6875 2550 50  0001 C CNN
+F 3 "~" H 6875 2550 50  0001 C CNN
+	1    6875 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7075 2350 7175 2350
+$Comp
+L power1:GND #PWR022
+U 1 1 5EC0E806
+P 6600 2450
+F 0 "#PWR022" H 6600 2200 50  0001 C CNN
+F 1 "GND" H 6600 2300 50  0000 C CNN
+F 2 "" H 6600 2450 50  0000 C CNN
+F 3 "" H 6600 2450 50  0000 C CNN
+	1    6600 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2450 6600 2350
+Wire Wire Line
+	6600 2350 6675 2350
+Wire Wire Line
+	7175 2175 7175 2350
+Connection ~ 7175 2350
+Wire Wire Line
+	7175 2350 7975 2350
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5EC37392
+P 7550 1675
+F 0 "TP8" V 7550 1950 50  0000 C CNN
+F 1 "TestPoint" V 7654 1747 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7750 1675 50  0001 C CNN
+F 3 "~" H 7750 1675 50  0001 C CNN
+	1    7550 1675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5EC49541
+P 7800 1900
+F 0 "TP9" V 7800 2175 50  0000 C CNN
+F 1 "TestPoint" V 7904 1972 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8000 1900 50  0001 C CNN
+F 3 "~" H 8000 1900 50  0001 C CNN
+	1    7800 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 1900 7725 1900
+Connection ~ 7725 1900
+Wire Wire Line
+	7725 1900 7725 1825
+Wire Wire Line
+	7550 1675 7625 1675
+Connection ~ 7625 1675
+Wire Wire Line
+	7625 1675 7625 1575
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5EC5A4E3
+P 10575 2300
+F 0 "TP10" V 10575 2575 50  0000 C CNN
+F 1 "TestPoint" V 10679 2372 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10775 2300 50  0001 C CNN
+F 3 "~" H 10775 2300 50  0001 C CNN
+	1    10575 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9525 2600 10575 2600
+Wire Wire Line
+	9525 2700 10575 2700
+Wire Wire Line
+	9525 2800 10575 2800
+Wire Wire Line
+	9525 3000 10575 3000
+Wire Wire Line
+	9525 3100 10575 3100
+Wire Wire Line
+	9525 3300 10575 3300
+Wire Wire Line
+	9525 3400 10575 3400
+Wire Wire Line
+	9525 3500 10575 3500
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5ECCCA5F
+P 10575 2400
+F 0 "TP11" V 10575 2675 50  0000 C CNN
+F 1 "TestPoint" V 10679 2472 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10775 2400 50  0001 C CNN
+F 3 "~" H 10775 2400 50  0001 C CNN
+	1    10575 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5ECCCBD5
+P 10575 2500
+F 0 "TP12" V 10575 2775 50  0000 C CNN
+F 1 "TestPoint" V 10679 2572 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10775 2500 50  0001 C CNN
+F 3 "~" H 10775 2500 50  0001 C CNN
+	1    10575 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5ECCCE05
+P 10575 2600
+F 0 "TP13" V 10575 2875 50  0000 C CNN
+F 1 "TestPoint" V 10679 2672 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10775 2600 50  0001 C CNN
+F 3 "~" H 10775 2600 50  0001 C CNN
+	1    10575 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP14
+U 1 1 5ECCDABF
+P 10575 2700
+F 0 "TP14" V 10575 2975 50  0000 C CNN
+F 1 "TestPoint" V 10679 2772 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10775 2700 50  0001 C CNN
+F 3 "~" H 10775 2700 50  0001 C CNN
+	1    10575 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5ECCDCA5
+P 10575 2800
+F 0 "TP15" V 10575 3075 50  0000 C CNN
+F 1 "TestPoint" V 10679 2872 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10775 2800 50  0001 C CNN
+F 3 "~" H 10775 2800 50  0001 C CNN
+	1    10575 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5ECCDF2D
+P 10575 3000
+F 0 "TP16" V 10575 3275 50  0000 C CNN
+F 1 "TestPoint" V 10679 3072 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10775 3000 50  0001 C CNN
+F 3 "~" H 10775 3000 50  0001 C CNN
+	1    10575 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5ECCE1EA
+P 10575 3100
+F 0 "TP17" V 10575 3375 50  0000 C CNN
+F 1 "TestPoint" V 10679 3172 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10775 3100 50  0001 C CNN
+F 3 "~" H 10775 3100 50  0001 C CNN
+	1    10575 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP18
+U 1 1 5ECCE43A
+P 10575 3200
+F 0 "TP18" V 10575 3475 50  0000 C CNN
+F 1 "TestPoint" V 10679 3272 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10775 3200 50  0001 C CNN
+F 3 "~" H 10775 3200 50  0001 C CNN
+	1    10575 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP19
+U 1 1 5ECCE68B
+P 10575 3300
+F 0 "TP19" V 10575 3575 50  0000 C CNN
+F 1 "TestPoint" V 10679 3372 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10775 3300 50  0001 C CNN
+F 3 "~" H 10775 3300 50  0001 C CNN
+	1    10575 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP20
+U 1 1 5ECCE958
+P 10575 3400
+F 0 "TP20" V 10575 3675 50  0000 C CNN
+F 1 "TestPoint" V 10679 3472 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10775 3400 50  0001 C CNN
+F 3 "~" H 10775 3400 50  0001 C CNN
+	1    10575 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP21
+U 1 1 5ECCF624
+P 10575 3500
+F 0 "TP21" V 10575 3775 50  0000 C CNN
+F 1 "TestPoint" V 10679 3572 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10775 3500 50  0001 C CNN
+F 3 "~" H 10775 3500 50  0001 C CNN
+	1    10575 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2575 6750 2575 6925
+Wire Wire Line
+	5025 1325 4700 1325
+Connection ~ 4700 1325
+Wire Wire Line
+	4700 1325 4700 1150
+$Comp
+L Ventilator:HSCMRRN100MDAA5 U1
+U 1 1 5E902C7D
+P 2575 3225
+F 0 "U1" H 2250 3725 50  0000 C CNN
+F 1 "HSCMRRN100MDAA5" H 2575 3649 50  0000 C CNN
+F 2 "Ventilator:SMT-8W_7.5x8.8mm_P2.54mm" H 2875 2825 50  0001 C CNN
+F 3 "" H 2725 2725 50  0001 C CNN
+	1    2575 3225
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1825 3075
+NoConn ~ 3325 3075
+NoConn ~ 3325 3175
+NoConn ~ 3325 3275
+NoConn ~ 3325 3375
+Wire Wire Line
+	2450 2175 2100 2175
+Wire Wire Line
+	2100 2175 2100 2300
+Wire Wire Line
+	5175 6375 5175 7075
+NoConn ~ 5300 6675
+NoConn ~ 2450 2275
+NoConn ~ 2450 2375
+Wire Wire Line
+	4875 1625 4875 2325
+Wire Wire Line
+	5025 2325 4875 2325
+Connection ~ 4875 2325
+Wire Wire Line
+	4875 2325 4875 2425
+Text Notes 9375 1725 0    50   ~ 0
+NOTE - P3 Pins 1-2 not used for this design \nso an 8 PIN connector can be fitted,\npopulating pins 3-10
+$Comp
+L Ventilator:HSCMRRN100MDAA5 U2
+U 1 1 5EA8A219
+P 2575 4125
+F 0 "U2" H 2250 4625 50  0000 C CNN
+F 1 "HSCDRRN100MDAA5" H 2575 4549 50  0000 C CNN
+F 2 "Ventilator:DIP-8_W13.08mm" H 2875 3725 50  0001 C CNN
+F 3 "" H 2725 3625 50  0001 C CNN
+	1    2575 4125
+	1    0    0    -1  
+$EndComp
+Text Notes 550  3775 0    50   ~ 0
+DUAL FOOTPRINT\nSM & DIP OPTIONS
+Wire Wire Line
+	1425 3375 1825 3375
+$Comp
+L power1:+5V #PWR023
+U 1 1 5EA96E18
+P 1425 3950
+F 0 "#PWR023" H 1425 3800 50  0001 C CNN
+F 1 "+5V" H 1425 4090 50  0000 C CNN
+F 2 "" H 1425 3950 50  0000 C CNN
+F 3 "" H 1425 3950 50  0000 C CNN
+	1    1425 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power1:GND #PWR024
+U 1 1 5EA96E22
+P 1425 4400
+F 0 "#PWR024" H 1425 4150 50  0001 C CNN
+F 1 "GND" H 1425 4250 50  0000 C CNN
+F 2 "" H 1425 4400 50  0000 C CNN
+F 3 "" H 1425 4400 50  0000 C CNN
+	1    1425 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1425 4400 1425 4275
+Wire Wire Line
+	1825 4075 1425 4075
+Wire Wire Line
+	1425 4075 1425 3950
+Wire Wire Line
+	1825 4175 750  4175
+Text Label 750  4175 0    50   ~ 0
+PRESSURE_SENSOR
+Wire Wire Line
+	1425 4275 1825 4275
+NoConn ~ 1825 3975
+NoConn ~ 3325 4075
+NoConn ~ 3325 4175
+NoConn ~ 3325 4275
+NoConn ~ 3325 3975
+Text Label 4950 4525 2    60   ~ 0
+OPTICAL_SW
+Wire Wire Line
+	4275 4525 5300 4525
+Text Label 4350 6575 0    60   ~ 0
+HOME_LIMIT_SW
+Text Notes 2300 2525 0    50   ~ 0
+(4 x P160KNP-0EC15B10K)
+Text Notes 2425 5050 0    50   ~ 0
+(PT-2038WQ)
+Text Notes 5575 6625 0    50   ~ 0
+(OPB911W55Z)
+Text Notes 5575 4525 0    50   ~ 0
+(OPB911W55Z)
+Text Notes 5300 1975 0    50   ~ 0
+(JHD659)
+$EndSCHEMATC
