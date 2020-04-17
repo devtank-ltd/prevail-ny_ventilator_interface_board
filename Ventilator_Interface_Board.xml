@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/home/tungsten/Documents/Devtank/Medical/Ventilator_Interface_Board/Ventilator_Interface_Board.sch</source>
-    <date>Thu 09 Apr 2020 22:44:41 BST</date>
+    <date>Fri 17 Apr 2020 17:21:26 BST</date>
     <tool>Eeschema 5.1.2-f72e74a~84~ubuntu18.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>PREVAIL-NY Emergency Ventilator Interface Board</title>
         <company>Devtank Ltd</company>
         <rev>A</rev>
-        <date>2020-04-08</date>
+        <date>2020-04-17</date>
         <source>Ventilator_Interface_Board.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -75,38 +75,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56D721E0</tstamp>
     </comp>
-    <comp ref="J4">
-      <value>LCD DISPLAY</value>
-      <footprint>Ventilator:Molex_KK-254_1x12_P2.54mm_Horizontal</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x12" description="Generic connector, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E9858CA</tstamp>
-    </comp>
-    <comp ref="J5">
-      <value>OPTICAL SWITCH</value>
-      <footprint>Ventilator:Molex_KK-254_1x05_P2.54mm_Horizontal</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E988889</tstamp>
-    </comp>
-    <comp ref="J6">
-      <value>HOME LIMIT SWITCH</value>
-      <footprint>Ventilator:Molex_KK-254_1x06_P2.54mm_Horizontal</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E98B018</tstamp>
-    </comp>
-    <comp ref="J1">
-      <value>ROTARY CONTROLS</value>
-      <footprint>Ventilator:Molex_KK-254_1x08_P2.54mm_Horizontal</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E98ED86</tstamp>
-    </comp>
     <comp ref="R5">
       <value>470R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
@@ -123,14 +91,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E99BB2B</tstamp>
     </comp>
-    <comp ref="R3">
-      <value>10K</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E99E8D4</tstamp>
-    </comp>
     <comp ref="R4">
       <value>470R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
@@ -139,14 +99,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E9D5C8A</tstamp>
     </comp>
-    <comp ref="R7">
-      <value>330R</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E9D5C94</tstamp>
-    </comp>
     <comp ref="R2">
       <value>10K</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
@@ -154,14 +106,6 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E9D5C9E</tstamp>
-    </comp>
-    <comp ref="J3">
-      <value>ALARM</value>
-      <footprint>Ventilator:Molex_KK-254_1x04_P2.54mm_Horizontal</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5EA3D754</tstamp>
     </comp>
     <comp ref="R1">
       <value>330R</value>
@@ -404,18 +348,91 @@
       <tstamp>5ECCF624</tstamp>
     </comp>
     <comp ref="U1">
-      <value>HSCMRRN100MDAA5</value>
-      <footprint>Ventilator:SMT-8W_7.5x8.8mm_P2.54mm</footprint>
-      <libsource lib="Ventilator" part="HSCMRRN100MDAA5" description=""/>
+      <value>MP3V5004GP</value>
+      <footprint>Ventilator:SOP_16.8x7.62mm_P2.54mm</footprint>
+      <libsource lib="Ventilator" part="MP3V5004GP" description="MP3V5004GRev 2, 06/2010Freescale Semiconductor© Freescale Semiconductor, Inc., 2008, 2010. All rights reserved.PressureIntegrated Silicon Pressure Sensor, On-Chip Signal Conditioned, Temperature Compensated and Calibrated"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E902C7D</tstamp>
+      <tstamp>5E9CDC68</tstamp>
     </comp>
-    <comp ref="U2">
-      <value>HSCDRRN100MDAA5</value>
-      <footprint>Ventilator:DIP-8_W13.08mm</footprint>
-      <libsource lib="Ventilator" part="HSCMRRN100MDAA5" description=""/>
+    <comp ref="R3">
+      <value>DNF</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5EA8A219</tstamp>
+      <tstamp>5E9FDD29</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9FC80C</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x08</value>
+      <footprint>Ventilator:PhoenixContact_PTSA_1,5_8-3_5-Z_1x08_P3.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9D3440</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x08</value>
+      <footprint>Ventilator:PhoenixContact_PTSA_1,5_8-3_5-Z_1x08_P3.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9D6AA8</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x08</value>
+      <footprint>Ventilator:PhoenixContact_PTSA_1,5_8-3_5-Z_1x08_P3.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA8355F</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x08</value>
+      <footprint>Ventilator:PhoenixContact_PTSA_1,5_8-3_5-Z_1x08_P3.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA871BF</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB5DA8F</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC34BE4</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC8BF0C</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>470pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ECFEBD6</tstamp>
     </comp>
   </components>
   <libparts>
@@ -432,60 +449,6 @@
       </fields>
       <pins>
         <pin num="1" name="1" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector_Generic" part="Conn_01x04">
-      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x04</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
-        <pin num="3" name="Pin_3" type="passive"/>
-        <pin num="4" name="Pin_4" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector_Generic" part="Conn_01x05">
-      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x05</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
-        <pin num="3" name="Pin_3" type="passive"/>
-        <pin num="4" name="Pin_4" type="passive"/>
-        <pin num="5" name="Pin_5" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector_Generic" part="Conn_01x06">
-      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x06</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
-        <pin num="3" name="Pin_3" type="passive"/>
-        <pin num="4" name="Pin_4" type="passive"/>
-        <pin num="5" name="Pin_5" type="passive"/>
-        <pin num="6" name="Pin_6" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector_Generic" part="Conn_01x08">
@@ -507,31 +470,6 @@
         <pin num="6" name="Pin_6" type="passive"/>
         <pin num="7" name="Pin_7" type="passive"/>
         <pin num="8" name="Pin_8" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector_Generic" part="Conn_01x12">
-      <description>Generic connector, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x12</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
-        <pin num="3" name="Pin_3" type="passive"/>
-        <pin num="4" name="Pin_4" type="passive"/>
-        <pin num="5" name="Pin_5" type="passive"/>
-        <pin num="6" name="Pin_6" type="passive"/>
-        <pin num="7" name="Pin_7" type="passive"/>
-        <pin num="8" name="Pin_8" type="passive"/>
-        <pin num="9" name="Pin_9" type="passive"/>
-        <pin num="10" name="Pin_10" type="passive"/>
-        <pin num="11" name="Pin_11" type="passive"/>
-        <pin num="12" name="Pin_12" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="C">
@@ -576,18 +514,18 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Ventilator" part="HSCMRRN100MDAA5">
+    <libpart lib="Ventilator" part="MP3V5004GP">
+      <description>MP3V5004GRev 2, 06/2010Freescale Semiconductor© Freescale Semiconductor, Inc., 2008, 2010. All rights reserved.PressureIntegrated Silicon Pressure Sensor, On-Chip Signal Conditioned, Temperature Compensated and Calibrated</description>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">HSCMRRN100MDAA5</field>
+        <field name="Value">MP3V5004GP</field>
         <field name="Footprint">MODULE</field>
-        <field name="Datasheet">DOCUMENTATION</field>
       </fields>
       <pins>
         <pin num="1" name="NC" type="input"/>
         <pin num="2" name="VDD" type="power_in"/>
-        <pin num="3" name="VOUT" type="input"/>
-        <pin num="4" name="GND" type="power_in"/>
+        <pin num="3" name="GND" type="input"/>
+        <pin num="4" name="VOUT" type="power_in"/>
         <pin num="5" name="NC" type="input"/>
         <pin num="6" name="NC" type="input"/>
         <pin num="7" name="NC" type="input"/>
@@ -697,249 +635,232 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="+5V">
-      <node ref="R6" pin="2"/>
-      <node ref="R2" pin="1"/>
-      <node ref="R4" pin="1"/>
-      <node ref="TP8" pin="1"/>
-      <node ref="R5" pin="1"/>
-      <node ref="U1" pin="2"/>
-      <node ref="U2" pin="2"/>
-      <node ref="P1" pin="5"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="J1" pin="1"/>
-      <node ref="J6" pin="1"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="J5" pin="1"/>
-      <node ref="R3" pin="1"/>
-      <node ref="J4" pin="3"/>
-      <node ref="C5" pin="2"/>
-      <node ref="J4" pin="2"/>
-    </net>
-    <net code="2" name="/LCD_D7">
-      <node ref="TP16" pin="1"/>
-      <node ref="J4" pin="10"/>
-      <node ref="P4" pin="1"/>
-    </net>
-    <net code="3" name="/LCD_D6">
-      <node ref="TP17" pin="1"/>
-      <node ref="P4" pin="2"/>
-      <node ref="J4" pin="9"/>
-    </net>
-    <net code="4" name="/LCD_D5">
-      <node ref="TP14" pin="1"/>
-      <node ref="P3" pin="9"/>
-      <node ref="J4" pin="8"/>
-    </net>
-    <net code="5" name="GND">
-      <node ref="R8" pin="2"/>
-      <node ref="SW1" pin="1"/>
-      <node ref="P3" pin="4"/>
-      <node ref="J6" pin="3"/>
-      <node ref="J1" pin="6"/>
-      <node ref="J5" pin="3"/>
-      <node ref="J4" pin="5"/>
-      <node ref="J4" pin="12"/>
-      <node ref="R7" pin="2"/>
-      <node ref="P1" pin="6"/>
-      <node ref="P1" pin="7"/>
-      <node ref="J4" pin="1"/>
-      <node ref="R1" pin="2"/>
-      <node ref="U1" pin="4"/>
-      <node ref="J3" pin="2"/>
-      <node ref="C3" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="C4" pin="1"/>
-      <node ref="U2" pin="4"/>
-      <node ref="C6" pin="1"/>
-      <node ref="C5" pin="1"/>
-      <node ref="C1" pin="1"/>
-    </net>
-    <net code="6" name="Net-(J3-Pad4)">
-      <node ref="R1" pin="1"/>
-      <node ref="J3" pin="4"/>
-    </net>
-    <net code="7" name="/BUZZER_LED">
-      <node ref="P3" pin="10"/>
-      <node ref="J3" pin="3"/>
-      <node ref="TP15" pin="1"/>
-      <node ref="J3" pin="1"/>
-    </net>
-    <net code="8" name="/PRESSURE_SENSOR">
-      <node ref="TP5" pin="1"/>
-      <node ref="P2" pin="5"/>
-      <node ref="U1" pin="3"/>
-      <node ref="U2" pin="3"/>
-    </net>
-    <net code="9" name="/LCD_D4">
-      <node ref="P4" pin="4"/>
-      <node ref="J4" pin="7"/>
-      <node ref="TP19" pin="1"/>
-    </net>
-    <net code="10" name="/LCD_EN">
-      <node ref="P3" pin="8"/>
-      <node ref="TP13" pin="1"/>
-      <node ref="J4" pin="6"/>
-    </net>
-    <net code="11" name="/LCD_RS">
-      <node ref="J4" pin="4"/>
-      <node ref="P3" pin="6"/>
-      <node ref="TP11" pin="1"/>
-    </net>
-    <net code="12" name="Net-(J4-Pad11)">
-      <node ref="J4" pin="11"/>
-      <node ref="R6" pin="1"/>
-    </net>
-    <net code="13" name="Net-(U1-Pad6)">
-      <node ref="U1" pin="6"/>
-    </net>
-    <net code="14" name="Net-(U2-Pad1)">
-      <node ref="U2" pin="1"/>
-    </net>
-    <net code="15" name="Net-(J1-Pad8)">
-      <node ref="J1" pin="8"/>
-    </net>
-    <net code="16" name="Net-(J1-Pad7)">
-      <node ref="J1" pin="7"/>
-    </net>
-    <net code="17" name="Net-(J6-Pad6)">
-      <node ref="J6" pin="6"/>
-    </net>
-    <net code="18" name="Net-(U1-Pad5)">
-      <node ref="U1" pin="5"/>
-    </net>
-    <net code="19" name="Net-(U1-Pad7)">
-      <node ref="U1" pin="7"/>
-    </net>
-    <net code="20" name="Net-(U1-Pad8)">
+    <net code="1" name="Net-(U1-Pad8)">
       <node ref="U1" pin="8"/>
     </net>
-    <net code="21" name="Net-(U1-Pad1)">
+    <net code="2" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="3" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="4" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="5" name="Net-(C4-Pad2)">
+      <node ref="R7" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C7" pin="2"/>
+    </net>
+    <net code="6" name="Net-(U1-Pad1)">
       <node ref="U1" pin="1"/>
     </net>
-    <net code="22" name="/OPTICAL_SW">
-      <node ref="TP21" pin="1"/>
-      <node ref="J5" pin="5"/>
-      <node ref="R2" pin="2"/>
-      <node ref="P4" pin="6"/>
+    <net code="7" name="/MOTOR_PWM_1">
+      <node ref="P4" pin="5"/>
+      <node ref="TP20" pin="1"/>
     </net>
-    <net code="23" name="Net-(U2-Pad8)">
-      <node ref="U2" pin="8"/>
+    <net code="8" name="/LCD_D4">
+      <node ref="J1" pin="7"/>
+      <node ref="TP19" pin="1"/>
+      <node ref="P4" pin="4"/>
     </net>
-    <net code="24" name="Net-(U2-Pad5)">
-      <node ref="U2" pin="5"/>
+    <net code="9" name="/LCD_D6">
+      <node ref="P4" pin="2"/>
+      <node ref="TP17" pin="1"/>
+      <node ref="J2" pin="1"/>
     </net>
-    <net code="25" name="Net-(U2-Pad6)">
-      <node ref="U2" pin="6"/>
-    </net>
-    <net code="26" name="Net-(U2-Pad7)">
-      <node ref="U2" pin="7"/>
-    </net>
-    <net code="27" name="+3V3">
+    <net code="10" name="+3V3">
       <node ref="P1" pin="4"/>
       <node ref="TP9" pin="1"/>
+      <node ref="R7" pin="2"/>
     </net>
-    <net code="28" name="/MAX_PRESSURE">
-      <node ref="TP4" pin="1"/>
-      <node ref="P2" pin="4"/>
-      <node ref="J1" pin="5"/>
-    </net>
-    <net code="29" name="/IF_RATE">
-      <node ref="J1" pin="4"/>
-      <node ref="P2" pin="3"/>
-      <node ref="TP3" pin="1"/>
-    </net>
-    <net code="30" name="/BPM">
-      <node ref="J1" pin="3"/>
+    <net code="11" name="/BPM">
       <node ref="TP2" pin="1"/>
+      <node ref="J3" pin="4"/>
       <node ref="P2" pin="2"/>
     </net>
-    <net code="31" name="/MOTOR_PWM_1">
-      <node ref="TP20" pin="1"/>
-      <node ref="P4" pin="5"/>
+    <net code="12" name="GND">
+      <node ref="P1" pin="6"/>
+      <node ref="J2" pin="6"/>
+      <node ref="J3" pin="8"/>
+      <node ref="J4" pin="1"/>
+      <node ref="J2" pin="4"/>
+      <node ref="P1" pin="7"/>
+      <node ref="U1" pin="3"/>
+      <node ref="R8" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="P3" pin="4"/>
+      <node ref="J4" pin="6"/>
+      <node ref="R10" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J1" pin="5"/>
+      <node ref="R1" pin="2"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C5" pin="1"/>
     </net>
-    <net code="32" name="/MOTOR_PWM_2">
+    <net code="13" name="/PRESSURE_SENSOR">
+      <node ref="P2" pin="5"/>
+      <node ref="U1" pin="4"/>
+      <node ref="C8" pin="2"/>
+      <node ref="TP5" pin="1"/>
+    </net>
+    <net code="14" name="/MAX_PRESSURE">
+      <node ref="J3" pin="6"/>
+      <node ref="P2" pin="4"/>
+      <node ref="TP4" pin="1"/>
+    </net>
+    <net code="15" name="/IF_RATE">
+      <node ref="P2" pin="3"/>
+      <node ref="J3" pin="5"/>
+      <node ref="TP3" pin="1"/>
+    </net>
+    <net code="16" name="/LCD_D5">
+      <node ref="TP14" pin="1"/>
+      <node ref="J1" pin="8"/>
+      <node ref="P3" pin="9"/>
+    </net>
+    <net code="17" name="/LCD_D7">
+      <node ref="TP16" pin="1"/>
+      <node ref="P4" pin="1"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="18" name="/BUZZER_LED">
+      <node ref="J2" pin="5"/>
+      <node ref="J2" pin="7"/>
+      <node ref="P3" pin="10"/>
+      <node ref="TP15" pin="1"/>
+    </net>
+    <net code="19" name="/LCD_EN">
+      <node ref="TP13" pin="1"/>
+      <node ref="P3" pin="8"/>
+      <node ref="J1" pin="6"/>
+    </net>
+    <net code="20" name="/MOTOR_PWM_2">
       <node ref="P3" pin="7"/>
       <node ref="TP12" pin="1"/>
     </net>
-    <net code="33" name="/MOTOR_DRIVER_EN">
+    <net code="21" name="/LCD_RS">
+      <node ref="P3" pin="6"/>
+      <node ref="J1" pin="4"/>
+      <node ref="TP11" pin="1"/>
+    </net>
+    <net code="22" name="Net-(J2-Pad3)">
+      <node ref="R6" pin="1"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="23" name="/MOTOR_DRIVER_EN">
       <node ref="P3" pin="5"/>
       <node ref="TP10" pin="1"/>
     </net>
-    <net code="34" name="/MOTOR_ENCODER">
-      <node ref="P4" pin="3"/>
-      <node ref="TP18" pin="1"/>
+    <net code="24" name="Net-(J4-Pad5)">
+      <node ref="R8" pin="1"/>
+      <node ref="J4" pin="5"/>
     </net>
-    <net code="35" name="Net-(P1-Pad8)">
-      <node ref="P1" pin="8"/>
+    <net code="25" name="+5V">
+      <node ref="C3" pin="2"/>
+      <node ref="J3" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="J1" pin="2"/>
+      <node ref="J1" pin="3"/>
+      <node ref="C1" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="R9" pin="2"/>
+      <node ref="P1" pin="5"/>
+      <node ref="J4" pin="4"/>
+      <node ref="TP8" pin="1"/>
+      <node ref="J3" pin="7"/>
     </net>
-    <net code="36" name="Net-(P3-Pad3)">
-      <node ref="P3" pin="3"/>
+    <net code="26" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1"/>
+      <node ref="R10" pin="1"/>
     </net>
-    <net code="37" name="Net-(P3-Pad2)">
-      <node ref="P3" pin="2"/>
+    <net code="27" name="/HOME_LIMIT_SW">
+      <node ref="J4" pin="8"/>
+      <node ref="R9" pin="1"/>
+      <node ref="P2" pin="6"/>
+      <node ref="TP6" pin="1"/>
     </net>
-    <net code="38" name="Net-(P3-Pad1)">
-      <node ref="P3" pin="1"/>
+    <net code="28" name="Net-(J4-Pad7)">
+      <node ref="R5" pin="1"/>
+      <node ref="J4" pin="7"/>
     </net>
-    <net code="39" name="Net-(P1-Pad2)">
-      <node ref="P1" pin="2"/>
+    <net code="29" name="Net-(J4-Pad2)">
+      <node ref="R4" pin="1"/>
+      <node ref="J4" pin="2"/>
     </net>
-    <net code="40" name="Net-(P4-Pad8)">
+    <net code="30" name="Net-(J2-Pad8)">
+      <node ref="J2" pin="8"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="31" name="/OPTICAL_SW">
+      <node ref="R2" pin="1"/>
+      <node ref="P4" pin="6"/>
+      <node ref="J4" pin="3"/>
+      <node ref="TP21" pin="1"/>
+    </net>
+    <net code="32" name="Net-(P4-Pad8)">
       <node ref="P4" pin="8"/>
     </net>
-    <net code="41" name="Net-(P4-Pad7)">
+    <net code="33" name="/MOTOR_ENCODER">
+      <node ref="TP18" pin="1"/>
+      <node ref="P4" pin="3"/>
+    </net>
+    <net code="34" name="Net-(P3-Pad3)">
+      <node ref="P3" pin="3"/>
+    </net>
+    <net code="35" name="Net-(P3-Pad2)">
+      <node ref="P3" pin="2"/>
+    </net>
+    <net code="36" name="Net-(P3-Pad1)">
+      <node ref="P3" pin="1"/>
+    </net>
+    <net code="37" name="Net-(P1-Pad2)">
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="38" name="Net-(P4-Pad7)">
       <node ref="P4" pin="7"/>
     </net>
-    <net code="42" name="Net-(P1-Pad1)">
+    <net code="39" name="Net-(P1-Pad1)">
       <node ref="P1" pin="1"/>
     </net>
-    <net code="43" name="Net-(P8-Pad1)">
+    <net code="40" name="Net-(P8-Pad1)">
       <node ref="P8" pin="1"/>
     </net>
-    <net code="44" name="Net-(P7-Pad1)">
+    <net code="41" name="Net-(P7-Pad1)">
       <node ref="P7" pin="1"/>
     </net>
-    <net code="45" name="Net-(P6-Pad1)">
+    <net code="42" name="Net-(P6-Pad1)">
       <node ref="P6" pin="1"/>
     </net>
-    <net code="46" name="Net-(P5-Pad1)">
+    <net code="43" name="Net-(P5-Pad1)">
       <node ref="P5" pin="1"/>
     </net>
-    <net code="47" name="/RESET">
+    <net code="44" name="Net-(P1-Pad8)">
+      <node ref="P1" pin="8"/>
+    </net>
+    <net code="45" name="/RESET">
+      <node ref="P1" pin="3"/>
       <node ref="TP7" pin="1"/>
       <node ref="SW1" pin="2"/>
-      <node ref="P1" pin="3"/>
     </net>
-    <net code="48" name="Net-(J5-Pad2)">
-      <node ref="J5" pin="2"/>
-      <node ref="R7" pin="1"/>
-    </net>
-    <net code="49" name="Net-(J5-Pad4)">
-      <node ref="J5" pin="4"/>
-      <node ref="R4" pin="2"/>
-    </net>
-    <net code="50" name="/TIDAL_VOLUME">
-      <node ref="P2" pin="1"/>
+    <net code="46" name="/TIDAL_VOLUME">
       <node ref="TP1" pin="1"/>
-      <node ref="J1" pin="2"/>
-    </net>
-    <net code="51" name="/HOME_LIMIT_SW">
-      <node ref="TP6" pin="1"/>
-      <node ref="P2" pin="6"/>
-      <node ref="J6" pin="5"/>
-      <node ref="R3" pin="2"/>
-    </net>
-    <net code="52" name="Net-(J6-Pad4)">
-      <node ref="R5" pin="2"/>
-      <node ref="J6" pin="4"/>
-    </net>
-    <net code="53" name="Net-(J6-Pad2)">
-      <node ref="R8" pin="1"/>
-      <node ref="J6" pin="2"/>
+      <node ref="J3" pin="3"/>
+      <node ref="P2" pin="1"/>
     </net>
   </nets>
 </export>

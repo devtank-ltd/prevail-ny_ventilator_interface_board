@@ -1,3 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP MP3V5004GP
+D MP3V5004GRev 2, 06/2010Freescale Semiconductor© Freescale Semiconductor, Inc., 2008, 2010. All rights reserved.PressureIntegrated Silicon Pressure Sensor, On-Chip Signal Conditioned, Temperature Compensated and Calibrated
+$ENDCMP
+#
 #End Doc Library

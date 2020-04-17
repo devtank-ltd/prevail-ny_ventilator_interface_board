@@ -1,4 +1,4 @@
-15024839345288660
+15034359117705660
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (http://www.bulgin.com/media/bulgin/data/Battery_holders.pdf)
@@ -63223,6 +63223,34 @@ https://www.farnell.com/cad/316865.pdf?_ga=2.37208032.177107060.1530611323-24901
 0
 48
 48
+Socket_Arduino_Uno
+Arduino_1pin
+module 1 pin (ou trou mecanique de percage)
+DEV
+0
+1
+1
+Socket_Arduino_Uno
+Socket_Strip_Arduino_1x06
+Through hole socket strip
+socket strip
+0
+6
+6
+Socket_Arduino_Uno
+Socket_Strip_Arduino_1x08
+Through hole socket strip
+socket strip
+0
+8
+8
+Socket_Arduino_Uno
+Socket_Strip_Arduino_1x10
+Through hole socket strip
+socket strip
+0
+10
+10
 Symbol
 CE-Logo_8.5x6mm_SilkScreen
 CE marking
@@ -68985,8 +69013,22 @@ connector Molex KK-254 side entry
 12
 12
 Ventilator
+PhoenixContact_PTSA_1,5_8-3_5-Z_1x08_P3.50mm_Vertical
+Generic Phoenix Contact connector footprint for: PTSA 1,5 8-3 5-Z 1x08 P3.50mm Vertical PN: 1985250
+phoenix_contact connector PTSA 1,5 8-3 5-Z 1x08 P3.50mm
+0
+8
+8
+Ventilator
 SMT-8W_7.5x8.8mm_P2.54mm
 8-Lead Plastic Small Outline (SO) - Wide, 7.50 mm Body, 2.54mm
+SMT 2.54
+0
+8
+8
+Ventilator
+SOP_16.8x7.62mm_P2.54mm
+8-Lead Plastic Small Outline (SO) - Wide, 16.8 mm Body, 2.54mm
 SMT 2.54
 0
 8
